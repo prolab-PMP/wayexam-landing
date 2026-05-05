@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>wayexam.com — PMP, CPLA, HEALTH, SAFETY exam practice</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Practice past exams for PMP, Korean Certified Public Labor Attorney (CPLA), Industrial Health Consultant, and Industrial Safety Consultant. Free to start.">
+<meta name="keywords" content="exam, practice, PMP, CPLA, industrial safety, industrial health, past exam, quiz">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wayexam.com/">
+<meta property="og:title" content="wayexam.com — Exam practice hub">
+<meta property="og:description" content="PMP, CPLA, Industrial Health, Industrial Safety — past exam practice in one place.">
+<meta property="og:url" content="https://wayexam.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --bg: #f7f8fb;
+    --card-bg: #ffffff;
+    --card-border: #e5e7eb;
+    --color-pmp: #4f46e5;
+    --color-cpla: #0891b2;
+    --color-health: #16a34a;
+    --color-safety: #dc2626;
+    --shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04);
+    --shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 12px 24px rgba(0,0,0,0.06);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  main {
+    width: 100%;
+    max-width: 720px;
+  }
+  .card {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+  }
+  .pmp {
+    padding: 80px 24px;
+    font-size: 5rem;
+    color: var(--color-pmp);
+    margin-bottom: 16px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .row .card {
+    padding: 40px 12px;
+    font-size: 2rem;
+  }
+  .cpla   { color: var(--color-cpla); }
+  .health { color: var(--color-health); }
+  .safety { color: var(--color-safety); }
+  @media (max-width: 600px) {
+    .pmp { padding: 56px 16px; font-size: 3.5rem; }
+    .row .card { padding: 28px 8px; font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <a class="card pmp"    href="https://pmp.wayexam.com/">PMP</a>
+  <div class="row">
+    <a class="card cpla"   href="https://cpla.wayexam.com/">CPLA</a>
+    <a class="card health" href="https://health.wayexam.com/">HEALTH</a>
+    <a class="card safety" href="https://safety.wayexam.com/">SAFETY</a>
+  </div>
+</main>
+
+</body>
+</html>
