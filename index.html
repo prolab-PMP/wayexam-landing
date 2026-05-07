@@ -2,95 +2,135 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>wayexam.com — PMP, CPLA, HEALTH, SAFETY exam practice</title>
+<title>wayexam.com — Korean Professional Exam Practice Hub</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Practice past exams for PMP, Korean Certified Public Labor Attorney (CPLA), Industrial Health Consultant, and Industrial Safety Consultant. Free to start.">
-<meta name="keywords" content="exam, practice, PMP, CPLA, industrial safety, industrial health, past exam, quiz">
+<meta name="description" content="Free practice platform for major Korean professional certification exams: PMP (Project Management Professional), CPLA (Certified Public Labor Attorney), Industrial Health Consultant, and Industrial Safety Consultant. Past-exam questions with accuracy tracking and wrong-answer notes.">
+<meta name="keywords" content="PMP, CPLA, Korean Labor Attorney, Industrial Safety Consultant, Industrial Health Consultant, exam practice, past exam, certification, study, quiz">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://wayexam.com/">
-<meta property="og:title" content="wayexam.com — Exam practice hub">
-<meta property="og:description" content="PMP, CPLA, Industrial Health, Industrial Safety — past exam practice in one place.">
+<meta property="og:title" content="wayexam.com — Korean Professional Exam Practice Hub">
+<meta property="og:description" content="Free practice for PMP, CPLA, Industrial Health, and Industrial Safety exams. Hundreds of past questions, multilingual PMP support.">
 <meta property="og:url" content="https://wayexam.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <style>
   :root {
-    --bg: #f7f8fb;
-    --card-bg: #ffffff;
-    --card-border: #e5e7eb;
-    --color-pmp: #4f46e5;
-    --color-cpla: #0891b2;
-    --color-health: #16a34a;
-    --color-safety: #dc2626;
+    --bg: #f7f8fb; --card-bg: #ffffff; --card-border: #e5e7eb;
+    --text: #111827; --text-muted: #6b7280;
+    --color-pmp: #4f46e5; --color-cpla: #0891b2;
+    --color-health: #16a34a; --color-safety: #dc2626;
     --shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04);
     --shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 12px 24px rgba(0,0,0,0.06);
   }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-  }
-  main {
-    width: 100%;
-    max-width: 720px;
-  }
-  .card {
-    display: block;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 16px;
-    box-shadow: var(--shadow);
-    text-decoration: none;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  .card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-  }
-  .pmp {
-    padding: 80px 24px;
-    font-size: 5rem;
-    color: var(--color-pmp);
-    margin-bottom: 16px;
-  }
-  .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-  .row .card {
-    padding: 40px 12px;
-    font-size: 2rem;
-  }
-  .cpla   { color: var(--color-cpla); }
-  .health { color: var(--color-health); }
-  .safety { color: var(--color-safety); }
-  @media (max-width: 600px) {
-    .pmp { padding: 56px 16px; font-size: 3.5rem; }
-    .row .card { padding: 28px 8px; font-size: 1.4rem; }
-  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+  main{width:100%;max-width:720px;margin:0 auto;padding:40px 24px 80px}
+  header{text-align:center;margin-bottom:40px}
+  header h1{margin:0 0 12px;font-size:2.2rem;letter-spacing:-0.03em;color:var(--text)}
+  header p{margin:0;color:var(--text-muted);font-size:1rem}
+  .card{display:block;background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);text-decoration:none;text-align:center;font-weight:700;letter-spacing:-0.02em;transition:transform .15s ease,box-shadow .15s ease}
+  .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+  .pmp{padding:60px 24px;font-size:4rem;color:var(--color-pmp);margin-bottom:16px}
+  .row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .row .card{padding:32px 12px;font-size:1.6rem}
+  .cpla{color:var(--color-cpla)} .health{color:var(--color-health)} .safety{color:var(--color-safety)}
+  section{margin-top:56px}
+  section h2{margin:0 0 20px;font-size:1.5rem;letter-spacing:-0.02em}
+  article{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:20px 24px;margin-bottom:14px;box-shadow:var(--shadow)}
+  article h3{margin:0 0 10px;font-size:1.1rem;letter-spacing:-0.01em}
+  article p{margin:0;color:var(--text);font-size:0.95rem}
+  article p+p{margin-top:8px}
+  article a{color:inherit}
+  ul.features{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  ul.features li{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);font-size:0.95rem}
+  ul.features strong{display:block;margin-bottom:4px}
+  details{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:14px 18px;margin-bottom:10px;box-shadow:var(--shadow)}
+  details summary{cursor:pointer;font-weight:600;font-size:0.98rem}
+  details[open] summary{margin-bottom:8px}
+  details p{margin:0;color:var(--text-muted);font-size:0.92rem}
+  footer{margin-top:64px;text-align:center;color:var(--text-muted);font-size:0.85rem}
+  footer a{color:var(--text-muted)}
+  @media (max-width:600px){main{padding:28px 16px 60px}header h1{font-size:1.7rem}.pmp{padding:44px 16px;font-size:2.8rem}.row .card{padding:22px 8px;font-size:1.15rem}ul.features{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
 <main>
-  <a class="card pmp"    href="https://pmp.wayexam.com/">PMP</a>
-  <div class="row">
-    <a class="card cpla"   href="https://cpla.wayexam.com/">CPLA</a>
-    <a class="card health" href="https://health.wayexam.com/">HEALTH</a>
-    <a class="card safety" href="https://safety.wayexam.com/">SAFETY</a>
-  </div>
-</main>
+  <header>
+    <h1>wayexam.com</h1>
+    <p>Free practice platform for major Korean professional certification exams. Pick an exam below and start with hundreds of real past-exam questions.</p>
+  </header>
 
+  <a class="card pmp" href="https://pmp.wayexam.com/" aria-label="PMP exam practice">PMP</a>
+  <div class="row">
+    <a class="card cpla" href="https://cpla.wayexam.com/" aria-label="CPLA exam practice">CPLA</a>
+    <a class="card health" href="https://health.wayexam.com/" aria-label="Industrial Health exam practice">HEALTH</a>
+    <a class="card safety" href="https://safety.wayexam.com/" aria-label="Industrial Safety exam practice">SAFETY</a>
+  </div>
+
+  <section>
+    <h2>About each exam</h2>
+    <article>
+      <h3>PMP — Project Management Professional</h3>
+      <p>The PMP certification, administered by the Project Management Institute (PMI), is the most widely recognized credential for project managers worldwide. Our platform covers <strong>2,234+ past questions</strong> aligned with PMBOK 7 and PMBOK 8, including Agile, Hybrid, and Predictive methodologies. The PMP track is <strong>multilingual</strong> — questions and explanations are available in English, Korean, Chinese, Spanish, and Japanese.</p>
+      <p><a href="https://pmp.wayexam.com/">Open PMP practice →</a></p>
+    </article>
+    <article>
+      <h3>CPLA — Certified Public Labor Attorney (공인노무사)</h3>
+      <p>CPLA (공인노무사) is one of Korea's most respected professional licenses, granting authority to advise on labor law, employment contracts, social insurance, and workplace dispute resolution. We provide past-exam questions across all primary subjects with year-by-year filtering and wrong-answer review.</p>
+      <p><a href="https://cpla.wayexam.com/">Open CPLA practice →</a></p>
+    </article>
+    <article>
+      <h3>HEALTH — Industrial Health Consultant (산업보건지도사)</h3>
+      <p>The Industrial Health Consultant license certifies expertise in occupational health, workplace hazard assessment, and ergonomics under Korea's Occupational Safety and Health Act. Our practice covers core subjects with topic-based filtering, accuracy statistics, and bookmarking for review-heavy study.</p>
+      <p><a href="https://health.wayexam.com/">Open Industrial Health practice →</a></p>
+    </article>
+    <article>
+      <h3>SAFETY — Industrial Safety Consultant (산업안전지도사)</h3>
+      <p>Industrial Safety Consultant is the senior credential for workplace safety experts in Korea, covering machine safety, electrical hazards, construction safety, and risk-management systems. Past-exam questions are organized by year and subject, with the same accuracy and wrong-answer-note tools as the other tracks.</p>
+      <p><a href="https://safety.wayexam.com/">Open Industrial Safety practice →</a></p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Why wayexam</h2>
+    <ul class="features">
+      <li><strong>Real past questions</strong>Hundreds of authentic questions from prior exam years across all four tracks.</li>
+      <li><strong>Accuracy tracking</strong>Per-question and per-subject statistics so you know which areas to study next.</li>
+      <li><strong>Wrong-answer notes</strong>Auto-built review list of every question you got wrong, with explanations.</li>
+      <li><strong>Bookmarking</strong>Mark any question for later — your bookmarks persist across sessions.</li>
+      <li><strong>Free to start</strong>Anonymous trial mode and free tier on every site. No credit card required.</li>
+      <li><strong>Multilingual PMP</strong>Switch the PMP track between English, Korean, Chinese, Spanish, and Japanese on the fly.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <details>
+      <summary>Do I need to sign up to start practicing?</summary>
+      <p>No. Each exam site offers an anonymous trial so you can try the experience first. Sign up only if you want progress saving, bookmarks, and wrong-answer notes.</p>
+    </details>
+    <details>
+      <summary>Are the past questions current?</summary>
+      <p>Yes. Each exam track is updated as new official exam content becomes available. The PMP track is aligned with both PMBOK 7 and the PMBOK 8 transition.</p>
+    </details>
+    <details>
+      <summary>Is wayexam.com free?</summary>
+      <p>The base practice experience is free on every track. Some sites offer a Premium tier with extended analytics and ad-free reading, but the core question bank is always accessible.</p>
+    </details>
+    <details>
+      <summary>Why are there four separate exam sites under wayexam.com?</summary>
+      <p>Each professional exam has different subject matter, regulatory references, and study workflows. Splitting them into four focused sites — PMP, CPLA, HEALTH, SAFETY — keeps each experience clean and lets us tune the question bank, statistics, and review tools per exam.</p>
+    </details>
+    <details>
+      <summary>How do I report a question issue or contact the team?</summary>
+      <p>Each exam site has a Report button on every question. For general inquiries, email <a href="mailto:songdoinfo@naver.com">songdoinfo@naver.com</a>.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p>Operated by Songdo Info · <a href="mailto:songdoinfo@naver.com">songdoinfo@naver.com</a></p>
+    <p>© 2026 wayexam.com — Korean Professional Exam Practice Hub</p>
+  </footer>
+</main>
 </body>
 </html>
